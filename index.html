@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tikki Card — tiny websites for your special moments" />
+  <title>Tikki Card — tiny websites, big little feelings.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a href="#home" class="brand" aria-label="Tikki Card home">
+        <img src="logo.svg" alt="Tikki Card" />
+      </a>
+
+      <div class="nav-links">
+        <a href="#cards">Cards</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <a class="pill-btn small" href="#contact">Contact <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="tiny-heart">♡</span> made for someone special</div>
+        <h1>tiny websites,<br><span>big little feelings.</span></h1>
+        <p>เปลี่ยนข้อความธรรมดา ให้กลายเป็นเว็บไซต์เล็กๆ ที่เขาอยากเปิดดูซ้ำอีกครั้ง</p>
+        <div class="hero-actions">
+          <a class="pill-btn" href="#cards">Find your card <span>↓</span></a>
+          <a class="text-link" href="#how">How it works <span>→</span></a>
+        </div>
+        <div class="trust-row">
+          <span>ไม่ต้องเขียนโค้ด</span><i></i>
+          <span>เปิดได้บนมือถือ</span><i></i>
+          <span>พร้อมแชร์เป็นลิงก์</span>
+        </div>
+      </div>
+
+      <div class="hero-playground reveal">
+        <div class="floating-note note-one">for your person <span>♡</span></div>
+        <div class="demo-window demo-back">
+          <div class="window-bar"><i></i><i></i><i></i></div>
+          <div class="mini-sorry">
+            <span>hey...</span>
+            <div class="cat">⌒(=･ x ･=)⌒</div>
+            <b>can we make up?</b>
+          </div>
+        </div>
+        <div class="demo-window demo-front">
+          <div class="window-bar"><i></i><i></i><i></i><em>tikki.card/birthday</em></div>
+          <div class="mini-birthday">
+            <span class="spark">✦</span>
+            <p>HAPPY</p>
+            <strong>BIRTHDAY!</strong>
+            <div class="cake">
+              <div class="flame"></div><div class="candle"></div>
+              <div class="cake-top"></div><div class="cake-base"></div>
+            </div>
+            <button type="button" id="heroDemoBtn">make a wish ♡</button>
+          </div>
+        </div>
+        <div class="floating-badge">interactive<br><b>not boring!</b></div>
+        <div class="floating-heart">♡</div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Tikki Card features">
+      <div class="marquee-track">
+        <span>BIRTHDAYS ♡</span><span>APOLOGIES ✦</span><span>ANNIVERSARIES ♡</span><span>CONFESSIONS ✦</span>
+        <span>BIRTHDAYS ♡</span><span>APOLOGIES ✦</span><span>ANNIVERSARIES ♡</span><span>CONFESSIONS ✦</span>
+      </div>
+    </section>
+
+    <section class="moment-section container">
+      <div class="section-heading reveal">
+        <span class="kicker">START HERE</span>
+        <h2>วันนี้อยากบอกอะไร<br>กับใครสักคน?</h2>
+        <p>เลือกจากความรู้สึกก่อน แล้วค่อยเจอการ์ดที่เหมาะกับโมเมนต์ของคุณ</p>
+      </div>
+
+      <div class="mood-grid reveal">
+        <button class="mood active" data-filter="all"><span>✦</span><b>ทั้งหมด</b><small>show me everything</small></button>
+        <button class="mood" data-filter="birthday"><span>🎂</span><b>วันเกิด</b><small>make their day</small></button>
+        <button class="mood" data-filter="sorry"><span>♡</span><b>ง้อเขา</b><small>let's make up</small></button>
+        <button class="mood" data-filter="love"><span>∞</span><b>บอกรัก</b><small>say it your way</small></button>
+      </div>
+    </section>
+
+    <section class="cards-section" id="cards">
+      <div class="container">
+        <div class="cards-head reveal">
+          <div>
+            <span class="kicker">THE LITTLE GALLERY</span>
+            <h2>Pick your tiny card.</h2>
+          </div>
+          <p>อย่าดูแค่รูปนะ — กดเข้าไปลองเล่นงานจริงได้เลย เพราะความน่ารักของ Tikki ซ่อนอยู่ในทุก interaction</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="template-card birthday-card reveal" data-category="birthday">
+            <div class="preview birthday-preview">
+              <div class="preview-tag">BEST FOR BIRTHDAYS</div>
+              <div class="preview-copy">
+                <small>a tiny surprise for</small>
+                <h3>your<br>special day!</h3>
+                <div class="preview-cake">♡<br><span>▰</span></div>
+              </div>
+              <div class="hover-hint">tap to peek →</div>
+            </div>
+            <div class="template-info">
+              <div><small>BIRTHDAY — 01</small><h3>Make a Wish</h3></div>
+              <a
+                class="circle-arrow demo-link"
+                href="https://tiercat.github.io/birthday/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Birthday demo"
+              >
+                ↗
+              </a>
+            </div>
+            <div class="template-bottom"><span>Interactive candle · Music · Message</span><b>199 THB</b></div>
+          </article>
+
+          <article class="template-card sorry-card reveal" data-category="sorry">
+            <div class="preview sorry-preview">
+              <div class="preview-tag">FOR MAKING UP</div>
+              <div class="sorry-face">
+                <span class="ear">⌒</span>
+                <div class="eyes">•　•</div>
+                <div class="paws">つ　⊂</div>
+              </div>
+              <h3>เค้าขอโทษนะ</h3>
+              <div class="fake-actions"><span>ยังไม่หายงอน</span><b>หายแล้ว ♡</b></div>
+              <div class="hover-hint">tap to peek →</div>
+            </div>
+            <div class="template-info">
+              <div><small>SORRY — 01</small><h3>Can We Make Up?</h3></div>
+              <a
+                class="circle-arrow demo-link"
+                href="https://sorry-meow.pages.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Sorry demo"
+              >
+                ↗
+              </a>
+            </div>
+            <div class="template-bottom"><span>Cute interaction · Music · Message</span><b>199 THB</b></div>
+          </article>
+
+          <article class="template-card coming-card reveal" data-category="love">
+            <div class="preview coming-preview">
+              <div class="coming-orbit orbit-a"></div>
+              <div class="coming-orbit orbit-b"></div>
+              <span>♡</span>
+              <h3>something<br>sweet is coming.</h3>
+              <p>new tiny card<br>dropping soon</p>
+            </div>
+            <div class="template-info">
+              <div><small>LOVE — SOON</small><h3>Coming Soon</h3></div>
+              <span class="circle-arrow muted">…</span>
+            </div>
+            <div class="template-bottom"><span>กำลังทำความน่ารักเพิ่มอีกนิด</span><b>SOON</b></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="try-section">
+      <div class="container try-inner reveal">
+        <div class="try-copy">
+          <span class="kicker">WHY TIKKI?</span>
+          <h2>ไม่ใช่แค่ “การ์ด”<br>แต่มันคือ <em>moment.</em></h2>
+          <p>คนรับไม่ได้แค่อ่านข้อความ แต่ได้กด ได้เล่น ได้เซอร์ไพรส์ และค่อยๆ เจอสิ่งที่คุณตั้งใจซ่อนไว้ให้เขา</p>
+          <a class="pill-btn light" href="#cards">Try a live demo <span>↗</span></a>
+        </div>
+        <div class="interaction-stack">
+
+  <!-- Bubble ด้านซ้าย -->
+  <div class="bubble bubble-1" id="holdHint">
+    hold me!
+  </div>
+
+
+  <!-- ปุ่ม Press & Hold -->
+  <button
+    class="love-button"
+    id="loveButton"
+    type="button"
+    aria-label="Press and hold to reveal a surprise"
+  >
+
+    <!-- Progress รอบปุ่ม -->
+    <svg
+      class="hold-progress"
+      viewBox="0 0 200 200"
+      aria-hidden="true"
+    >
+      <circle
+        class="hold-progress-track"
+        cx="100"
+        cy="100"
+        r="94"
+      />
+
+      <circle
+        class="hold-progress-fill"
+        id="holdProgress"
+        cx="100"
+        cy="100"
+        r="94"
+      />
+    </svg>
+
+
+    <!-- Content ตรงกลาง -->
+    <div class="love-button-content">
+
+      <span
+        class="love-heart"
+        id="mainHeart"
+      >
+        ♡
+      </span>
+
+      <strong
+        class="love-success"
+        id="loveSuccess"
+      >
+        you found it!
+      </strong>
+
+      <small id="holdText">
+        press & hold
+      </small>
+
+    </div>
+
+
+    <!-- หัวใจที่ POP ออกมา -->
+    <span class="pop-heart heart-1">♡</span>
+    <span class="pop-heart heart-2">♡</span>
+    <span class="pop-heart heart-3">♡</span>
+    <span class="pop-heart heart-4">♡</span>
+    <span class="pop-heart heart-5">♡</span>
+    <span class="pop-heart heart-6">♡</span>
+    <span class="pop-heart heart-7">♡</span>
+    <span class="pop-heart heart-8">♡</span>
+
+  </button>
+
+
+  <!-- Surprise Bubble -->
+  <div
+    class="bubble bubble-2"
+    id="loveMessage"
+  >
+    a little feeling<br>
+    is hiding here
+  </div>
+
+</div>
+    </section>
+
+    <section class="how-section container" id="how">
+      <div class="section-heading centered reveal">
+        <span class="kicker">SUPER EASY</span>
+        <h2>จาก “อยากส่งให้เขา”<br>ถึง “ได้ลิงก์แล้ว!”</h2>
+      </div>
+
+      <div class="steps reveal">
+        <article><span>01</span><div class="step-icon">⌁</div><h3>Pick</h3><p>เลือกการ์ดที่ตรงกับโมเมนต์ของคุณ</p></article>
+        <div class="step-arrow">→</div>
+        <article><span>02</span><div class="step-icon">Aa</div><h3>Personalize</h3><p>ส่งข้อความ รูป และรายละเอียดที่อยากใส่</p></article>
+        <div class="step-arrow">→</div>
+        <article><span>03</span><div class="step-icon">✦</div><h3>We make it yours</h3><p>Tikki จัดการความน่ารักให้พร้อมใช้งาน</p></article>
+        <div class="step-arrow">→</div>
+        <article><span>04</span><div class="step-icon">↗</div><h3>Share</h3><p>รับลิงก์ส่วนตัว แล้วส่งให้คนพิเศษได้เลย</p></article>
+      </div>
+    </section>
+
+    <section class="included-section">
+      <div class="container included-grid reveal">
+        <div>
+          <span class="kicker">EVERY TINY CARD</span>
+          <h2>พร้อมส่ง.<br>พร้อมเซอร์ไพรส์.</h2>
+        </div>
+        <div class="check-list">
+          <div><span>✓</span><p><b>Personal website link</b><small>มีลิงก์สำหรับเปิดและแชร์</small></p></div>
+          <div><span>✓</span><p><b>Your own message</b><small>เปลี่ยนข้อความให้เป็นเรื่องของคุณ</small></p></div>
+          <div><span>✓</span><p><b>Your photos</b><small>ใส่รูปตามรูปแบบของแต่ละการ์ด</small></p></div>
+          <div><span>✓</span><p><b>Mobile friendly</b><small>เปิดง่ายและสวยบนมือถือ</small></p></div>
+          <div><span>✓</span><p><b>Interactive details</b><small>มีลูกเล่นให้คนรับได้กดเล่น</small></p></div>
+          <div><span>✓</span><p><b>No coding needed</b><small>คุณแค่ส่งข้อมูล ที่เหลือเราจัดการ</small></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="quote-doodle">♡</div>
+      <p>for birthdays. for apologies.<br>for confessions. for <i>little moments</i><br>you don't want to forget.</p>
+    </section>
+
+    <section class="faq-section container" id="faq">
+      <div class="faq-title reveal">
+        <span class="kicker">JUST IN CASE</span>
+        <h2>คำถามเล็กๆ<br>ก่อนส่งความรู้สึก</h2>
+      </div>
+      <div class="faq-list reveal">
+        <details><summary>ต้องเขียนโค้ดเองไหม?<span>+</span></summary><p>ไม่ต้องเลย คุณเลือกแบบและส่งข้อมูลให้ Tikki จากนั้นเราจะจัดทำให้พร้อมเปิดใช้งานและแชร์เป็นลิงก์</p></details>
+        <details><summary>เปลี่ยนข้อความและรูปได้ไหม?<span>+</span></summary><p>ได้ ข้อความและรูปสามารถปรับเป็นของคุณได้ตามพื้นที่และจำนวนที่กำหนดในแต่ละ Template</p></details>
+        <details><summary>เปิดบนมือถือได้ไหม?<span>+</span></summary><p>ได้ เราออกแบบโดยให้ประสบการณ์บนมือถือเป็นหลัก เพื่อให้คนรับเปิดจากลิงก์แล้วใช้งานได้ง่าย</p></details>
+        <details><summary>หลังสั่งซื้อจะได้รับอะไร?<span>+</span></summary><p>คุณจะได้รับลิงก์เว็บไซต์ที่จัดทำเสร็จแล้ว พร้อมส่งต่อให้คนพิเศษได้ทันที</p></details>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-card reveal">
+        <span class="contact-heart">♡</span>
+        <small>READY WHEN YOU ARE</small>
+        <h2>มีอะไรอยากบอกเขาไหม?</h2>
+        <p>let's make it into a tiny website.</p>
+        <div class="contact-actions">
+          <a href="https://www.instagram.com/tikki_card?igsh=NTBvb3N1YzRiMzd0&utm_source=qr" target="_blank" rel="noopener" class="social-btn instagram"><span>◎</span><div><small>CHAT WITH US ON</small><b>Instagram</b></div><em>↗</em></a>
+          <a href="https://www.tiktok.com/@tikki_card?_r=1&_t=ZS-98DwSgHNbce" target="_blank" rel="noopener" class="social-btn tiktok"><span>♪</span><div><small>SEE MORE ON</small><b>TikTok</b></div><em>↗</em></a>
+        </div>
+        <p class="contact-note">* เปลี่ยนลิงก์ Instagram / TikTok เป็นบัญชีร้านได้ในไฟล์ index.html</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-top">
+      <div class="footer-brand"><img src="logo.svg" alt="Tikki Card"><p>tiny websites for<br>your special moments.</p></div>
+      <div class="footer-links"><a href="#cards">Cards</a><a href="#how">How it works</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Tikki Card</span><span>made with a tiny bit of ♡</span></div>
+  </footer>
+
+  <div class="toast" id="toast">♡ make a wish!</div>
+  <script src="script.js"></script>
+</body>
+</html>
