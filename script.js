@@ -36,7 +36,7 @@ const products = [
 
   {
     code: "02",
-    title: "Breaking Love News",
+    title: "Breaking News",
     tags: ["love", "fun"],
     tagLabel: "LOVE · FUN",
     description: "ข่าวด่วน ข่าวลับ เกี่ยวกับความรักแบบมีเรื่อง",
@@ -44,7 +44,7 @@ const products = [
     salePrice: 49,
     bg: "#deedf7",
     tilt: "-2deg",
-    url: "https://breaking-love-news.pages.dev/"
+    url: "https://breaking-news-d05.pages.dev/"
   },
 
   {
